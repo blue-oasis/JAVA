@@ -14,5 +14,6 @@ public class Test03 {
 		System.out.println(a + b);
 		int c = add(a, b);
 		System.out.println(c);
+		System.out.print("안녕");
 	}
 }
