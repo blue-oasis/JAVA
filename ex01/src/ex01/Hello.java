@@ -16,6 +16,8 @@ public class Hello {
 		System.out.println(a);
 		System.out.println("Hello");
 		System.out.println(s);
+		System.out.print("테스트");
+	
 	}
 
 }
