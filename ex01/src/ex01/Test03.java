@@ -11,6 +11,7 @@ public class Test03 {
 		// TODO Auto-generated method stub
 		int a = 10;
 		int b = 30;
+		int d, g, h = 10;
 		System.out.println(a + b);
 		int c = add(a, b);
 		System.out.println(c);
