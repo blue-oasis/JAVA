@@ -24,11 +24,11 @@ public class 원_내부_좌표_판별 {
 			System.out.println("점(" + x + ", " + y + ")는 원 안에 없습니다.");
 			
 		
-		/*if (((a+=c)> x) && ((a-=c)> x) && ((b+=c)> x) && ((b-=c)> x) &&
-				((a+=c)> y) && ((a-=c)> y) && ((b+=c)> y) && ((b-=c)> y))
+		/*if ( ((a+=c)> x) && ((a-=c)> x) && ((b+=c)> y) && ((b-=c)> y) )
 		System.out.println("점(" + x + ", " + y + ")는 원 안에 있습니다.");
 		else 
-		System.out.println("점(" + x + ", " + y + "는 원 안에 없습니다."); */
+		System.out.println("점(" + x + ", " + y + "는 원 안에 없습니다."); 
+		지저분해서 일단 뺌 */
 						
 	}
 
