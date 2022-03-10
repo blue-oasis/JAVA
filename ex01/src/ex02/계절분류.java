@@ -31,5 +31,18 @@ public class 계절분류 {
 		default:
 			System.out.println("잘못 입력하였습니다.");
 		}
+		/*if (1<=s && 2>=s)
+			System.out.println("겨울");
+		else if(s==12)
+			System.out.println("겨울");
+		else if (3<=s && 5>=s)
+			System.out.println("봄");
+		else if (6<=s && 8>=s)
+			System.out.println("여름");
+		else if (9<=s && 11>=s)
+			System.out.println("가을");
+		else 
+			System.out.println("잘못 입력하였습니다.");
+			if문으로도 해봄~~^^ */
 	}
 }
