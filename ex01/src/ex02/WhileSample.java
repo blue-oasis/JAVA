@@ -12,7 +12,7 @@ public class WhileSample {
 		while(n != -1){ //-1 입력 시 벗어남
 			sum += n;
 			count++;
-			n = in.nextInt();
+			n = in.nextInt(); //정수 입력
 		}
 		if(count == 0) {
 			System.out.println("입력된 수가 없습니다.");
