@@ -1,6 +1,5 @@
 package ex0316;
 import java.util.Scanner;
-import java.util.Scanner;
 
 public class 최대공약수_최대공배수2 {
 
