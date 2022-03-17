@@ -24,9 +24,15 @@ public class 정수_랜덤_배열_안겹치게 {
 				}
 			}
 		}
-		
+		int count = 0;
 		for(int i: intArray) { //출력
 			System.out.print(i + " ");
+			count++;
+			if(count == 10) {
+				System.out.println();
+				count=0;
+			
+			}
 		}
 		in.close();
 	}
