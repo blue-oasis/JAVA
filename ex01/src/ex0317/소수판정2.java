@@ -37,6 +37,6 @@ public class 소수판정2 {
 		System.out.print("\n소수의 갯수는 " +  count + "개 입니다.");
 	}
 
-	}
+}
 
 
