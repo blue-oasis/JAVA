@@ -12,6 +12,7 @@ public class 소수판정2 {
 	
 		int count = 0; //소수 총갯수 카운트
 		int line = 10; //라인 개행
+		int line_c = 0;
 		boolean real = false; //소수 여부 파악
 		int y = 2; //y나누는 수 2~m-z
 		for(int z = n ;z<=m; z++) { //z 나눠지는 수, 작은수부터 시작
@@ -30,9 +31,12 @@ public class 소수판정2 {
 				count++;
 			}
 			if(0==count%line) {
+				line_c++;
+				if(line_c == 1) {
 				System.out.println();
+				line_c = 0;
 			}
-
+			}
 	}
 		System.out.print("\n소수의 갯수는 " +  count + "개 입니다.");
 	}
