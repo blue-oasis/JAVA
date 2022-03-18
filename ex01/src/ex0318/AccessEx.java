@@ -9,9 +9,9 @@ public class AccessEx {
 
 	public static void main(String[] args) {
 		Sample aClass = new Sample();
-		aClass.a =10;
-		aClass.b = 10;
-		aClass.c= 10;
+		aClass.a =10; //퍼블릭
+		aClass.b = 10; //프라이빗 맴버라 접근 불가
+		aClass.c= 10; //디폴트 (같은 패키지)
 		
 	}
 
