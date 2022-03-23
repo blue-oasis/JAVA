@@ -47,7 +47,7 @@ public class 피보나치수열3 {
 			}
 			
 			}
-		in.close();
+		in.close();  
 		}
 
 	}
