@@ -18,6 +18,7 @@ public class ReturnArray2 {
 		for(int i: intArray) { //출력
 			System.out.print(i + " ");
 		}
+		in.close();
 	}
 
 }
