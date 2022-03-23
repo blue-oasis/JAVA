@@ -39,6 +39,7 @@ public class 피보나치수열 {
 			}
 			
 			}
+		in.close();
 		}
 		
 		
