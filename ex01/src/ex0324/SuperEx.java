@@ -16,7 +16,7 @@ class Point2{
 class ColorPoint2 extends Point2{
 	private String color;
 	public ColorPoint2(int x, int y, String color) {
-		super(x, y);
+		super(x, y); // 슈퍼 클래스의 생성자 호출(인자로 구분)
 		this.color = color;
 	}
 
