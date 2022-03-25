@@ -24,7 +24,7 @@ public class 선택정렬 { //3월 30일까지 하기 + 이거 간결하게 고�
 		
 		Arrays.sort(점수); //오름차순 정렬
 		
-		for(int q = 0; q<10; q++) { //원점수 입력순서대로 키값에 점수 부여, 학점은 null
+		for(int q = 0; q<10; q++) { //입력순서대로 키값에 원점수 부여, 학점은 null
 			학점부여.put(점수2.get(q), null);
 		}
 		
@@ -49,7 +49,7 @@ public class 선택정렬 { //3월 30일까지 하기 + 이거 간결하게 고�
 			System.out.print(u + " ");
 		}*/
 		
-		for(int k = 0; k<10; k++) { //출력문
+		for(int k = 0; k<10; k++) { //출력문 점수2의 키값(입력순서) 이용 입력순대로 학점 출력
 		
 			System.out.print(학점부여.get(점수2.get(k))+ " ");
 	}
