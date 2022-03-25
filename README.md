@@ -1,6 +1,7 @@
 # JAVA
-JAVA study class 파일 모음
-<P>2022년 3월 2일~ing<p>
+JAVA study class 파일 모음<p>
+*** Today I Learned ***
+<P>2022년 3월 2일~ing 
   ex01/scr 폴더 밑에 날짜 형식으로 패키지를 만들고 그 날에 한 코드를 다 올리고 있습니다. 예: ex0310 = 3월 10일 작업
   <p>기여자 JiWon , blue-oasis는 모두 같은 사람입니다..
   <p>작업 환경이 달라서 초기 기여자 이름이 동일하지 않습니다..아까운 내 기여도 !!!
