@@ -10,7 +10,7 @@ class Point{
 		this.y = y;
 	}
 	
-	public String toString() {
+	public String toString() { //toString 오버라이딩
 		return "(" + x + "," + y + ")";
 	}
 }
@@ -24,6 +24,7 @@ public class PointVectorEx {
 		v.add(new Point(30, -8));
 		
 		v.remove(1);
+		
 		
 		for(int i = 0; i<v.size(); i++) {
 			Point p = v.get(i);
