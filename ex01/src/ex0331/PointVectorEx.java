@@ -23,7 +23,7 @@ public class PointVectorEx {
 		v.add(new Point(-5, 20));
 		v.add(new Point(30, -8));
 		
-		v.remove(1);
+		v.remove(1); //인덱스 1에 위치한 값 삭제
 		
 		
 		for(int i = 0; i<v.size(); i++) {
