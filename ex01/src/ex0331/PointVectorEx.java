@@ -28,7 +28,7 @@ public class PointVectorEx {
 		
 		for(int i = 0; i<v.size(); i++) {
 			Point p = v.get(i);
-			System.out.println(p); //p.toStirng() 이용 객체 출력
+			System.out.println(p); //p.toString() 이용 객체 출력
 		}
 		
 	}
