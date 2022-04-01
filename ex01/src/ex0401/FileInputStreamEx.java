@@ -20,7 +20,7 @@ public class FileInputStreamEx {
 			fin.close();
 		}
 		catch(IOException e) {
-			System.out.println("test.out에서 읽지 못했습니다. 결로명을 체크해보세요.");
+			System.out.println("test.out에서 읽지 못했습니다. 경로명을 체크해보세요.");
 		}
 	}
 
