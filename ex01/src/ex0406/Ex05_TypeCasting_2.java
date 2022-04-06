@@ -24,6 +24,7 @@ public class Ex05_TypeCasting_2 {
 		System.out.println(value6);
 		System.out.println(value7);
 		System.out.println(value8);
+		
 	}
 
 }
