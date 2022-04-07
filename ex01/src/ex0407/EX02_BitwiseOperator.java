@@ -17,27 +17,31 @@ public class EX02_BitwiseOperator {
 		
 		//다양한 진법 표현
 		System.out.println(13);
-		System.out.println(0b1101);
-		System.out.println(015);
-		System.out.println(0x0D);
+		System.out.println(0b1101); //2진
+		System.out.println(015); //8진
+		System.out.println(0x0D); //16진
 		System.out.println();
 		
-		System.out.println(3 & 10);
-		System.out.println(0b0011 % 0b1010);
-		System.out.println(0x03 & 0x0A);
+		//bit AND
+		System.out.println(3 & 10); //2
+		System.out.println(0b0011 % 0b1010); //3
+		System.out.println(0x03 & 0x0A); //2
 		System.out.println();
 		
-		System.out.println(3 | 10);
+		//bit OR
+		System.out.println(3 | 10); //11
 		System.out.println(0b0011 | 0b1010);
 		System.out.println(0x03 | 0x0A);
 		System.out.println();
 		
-		System.out.println(3 ^ 10);
+		//bit XOR
+		System.out.println(3 ^ 10); //9
 		System.out.println(0b0011 ^ 0b1010);
 		System.out.println(0x03 ^ 0x0A);
 		System.out.println();
 
-		System.out.println(~3);
+		//bit NOT
+		System.out.println(~3); //-4
 		System.out.println(~0b0011);
 		System.out.println(~0x03);
 		System.out.println();
