@@ -2,9 +2,12 @@ package ex0411;
 //외부 클래스
 class A {
 	int m = 3;
+	double n;
+	boolean a;
 	void print() {
 		System.out.println("객체 생성 및 활용");
 	}
+	
 }
 
 public class Chap05_CreateObjectAndUsageOfMembers {
@@ -19,7 +22,7 @@ public class Chap05_CreateObjectAndUsageOfMembers {
 		
 		//메서드 호출
 		a.print(); 
-		
+
 	}
 
 }
