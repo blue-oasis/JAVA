@@ -37,7 +37,7 @@ public class 숫자_합_구하기2 {
 			
 			do { // 입력 2 조건검사
 				
-				if(sumNum.length() == num) { 
+				if(sumNum.length() == num) { //숫자 갯수 안맞거나 공백있으면 c2 = ture
 					for(int i = 0; i<c_sumNum.length; i++) {
 						c_sumNum[i] = sumNum.charAt(i);			
 					}
@@ -62,14 +62,14 @@ public class 숫자_합_구하기2 {
 					}
 						if(check == true) {
 						System.out.println("문자를 제외하고 숫자만 입력해 주세요");
-							sumNum = in.next();
+							sumNum = in.nextLine();
 							check = true;
 						}
 						
 					}
 				
 				
-				if(check == false && c2 == false) {
+				if(check == false && c2 == false) { //최종 조건 검사
 					allCheck = false;
 				}
 				
