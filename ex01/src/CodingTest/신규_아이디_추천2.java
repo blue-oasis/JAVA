@@ -23,7 +23,7 @@ public class 신규_아이디_추천2 {
         
         char[] c_id = answer.toCharArray();
         
-        if(answer.length() != 0) { //수정 필요 answer.substring(1,length -1); indexOf('.') begin 1, end -2, length 0
+        if(answer.length() > 0) { //수정 필요 answer.substring(1,length -1); indexOf('.') begin 1, end -2, length 0
         while(true) {	
         		if(answer.indexOf('.') == 0){
         			answer = answer.substring(1, (answer.length()-1));
@@ -34,10 +34,10 @@ public class 신규_아이디_추천2 {
         	}
         }
         
-        if(answer.length() != 0) { //수정 필요 answer.substring(1,length -1); indexOf('.')
+        if(answer.length() > 0) { //수정 필요 answer.substring(1,length -1); indexOf('.')
             while(true) {	
             		if(answer.lastIndexOf('.') == (answer.length()-1)){
-            			answer = answer.substring(1, (answer.length()-2));
+            			answer = answer.substring(0, (answer.length()-2));
             		}
             		else {
             			break;
