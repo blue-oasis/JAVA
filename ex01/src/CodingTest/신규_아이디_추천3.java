@@ -19,15 +19,20 @@ public class 신규_아이디_추천3 {
         	answer = answer.replace(sp[i], "");
         	//answer = answer.replace("..", "."); //넣기?
         	}
+      
+        while(answer.indexOf("..")!= -1) {
+        answer = answer.replace("..", "."); 
+       }
        
-        answer = answer.replace("..", "."); //점많으면 치환안댐
-        
        char[] c_id = answer.toCharArray();
        int count = 0;
 	
        for(int i = 0 ; i<answer.length(); i++) { //.만 있으면 고장
 			if(c_id[i] == '.') {
 				count++;
+				if(c_id.length == 1) {
+					answer = "";
+				}
 			}
 			else {
 				answer = answer.substring(count, answer.length());
@@ -36,38 +41,15 @@ public class 신규_아이디_추천3 {
 		}
        
         c_id = answer.toCharArray();
-		/*count = 0; //바꾸기
-		for(int i = (answer.length() - 1) ; i<-1; i--) {
-			if(c_id[i] == '.') {
-				count++;
-			}
-			else {
-				answer = answer.substring(0, answer.length());
-				break;
-			}
-		}
-        
+		
+		if(answer.length()>1) {
+			 //이거 이상함 끝에 . 제거
+				if(c_id[answer.length()-1] == '.') {
+					answer = answer.substring(0, answer.length()-1);		
+				}
+		} 
        
         
-        if(answer.length() > 0) { //수정 필요 answer.substring(1,length -1); indexOf('.') 웨않덴대?!
-            while(true) {	
-            		if(answer.lastIndexOf('.') == (answer.length()-1)){ //범위체크하래 에러는안나는대 동작이상 
-            			if(answer.length()>2){
-                        answer = answer.substring(0, (answer.length()-2));
-                        }
-                        else{
-                            break;
-                        }
-            		}
-            		else {
-            			break;
-            		}
-            	}
-            }*/
-         
-         //answer = String.valueOf(c_id); 
-         //answer = answer.replace(" ", "");
-         
          if(answer.equals("")) {
         	 answer = "a";
          }
@@ -75,11 +57,9 @@ public class 신규_아이디_추천3 {
          if(answer.length() >= 16) {
         	 answer = answer.substring(0,15);
         	 c_id = answer.toCharArray(); 
-        	 if(c_id[answer.length() - 1] == '.') {
-           	  c_id[(answer.length() - 1)] = ' ';
-           	  answer = String.valueOf(c_id);
-           	  answer = answer.replace(" ", "");
-             }//if() .끝에 있으면 제거 for 돌리는게 조을듯 근데 끝에 제거 for문이 이상해서리
+        	 if(c_id[answer.length()-1] == '.') {
+					answer = answer.substring(0, answer.length()-1);		
+        	 }
          }
          
          if(answer.length() <= 2) {//2자 이하면 마지막문자를 길이 3까지반복
@@ -95,11 +75,12 @@ public class 신규_아이디_추천3 {
 
 	public static void main(String[] args) {
 		 System.out.println(solution("...!@BaT#*..y.abcdefghijklm")); //bat.y.abcdefghi
-		 System.out.println(solution("z-+.^.")); //z--
+		 System.out.println(solution("z-+.^.")); //z-- z-.로나옴!!!!
 		 System.out.println(solution("123_.def")); 
 		 System.out.println(solution("abcdefghijklmn.p")); //abcdefghijklmn
 		 System.out.println(solution("=.=")); //aaa
 		 System.out.println(solution("****")); //aaa
+		 System.out.println(solution("1!!3!!.!!.!.."));
 		 
 	}
 
