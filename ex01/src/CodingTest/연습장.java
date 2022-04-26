@@ -1,10 +1,13 @@
 package CodingTest;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.ArrayList;
+
 public class 연습장 {
 	public static int[] solution(int N, int[] stages) {
         int[] answer = new int[N];
-        answer = new int[N];
         Double[] fail = new Double[N]; //실패율 저장	
         
         for(int i = 0; i<N; i++) {
@@ -40,14 +43,21 @@ public class 연습장 {
         Arrays.sort(fail_D, Collections.reverseOrder()); //내림차순 정렬
        
         for(int i = 0; i<N; i++) { //같은 값 있을때 인덱스 제대로 구하기..? indexOf(값, 시작위치)
-        	int ch = Arrays.asList(fail).indexOf(fail_D[i]) + 1;
-        	int ch2 = Arrays.asList(answer).indexOf(ch);
+        	int ch = Arrays.asList(fail).indexOf(fail_D[i]) + 1; //스테이지 번호
+        	int ch2 = Arrays.asList(answer).indexOf(ch); //중복여부 검사 for 돌리는게 나을듯
+        	
         	if(ch2 != -1) {
-        		String a2 = Arrays.toString(answer);
-        		answer[i] = a2.indexOf(ch, i+1) + 1; //이상한데?? 멍청코드
+        		for(int j = i; j<N; j++) {
+        			answer[j] = Arrays.asList(fail).indexOf(fail_D[j]) + 1;
+        		}
+        		//String a2 = Arrays.toString(answer);
+        		//answer[i] = a2.indexOf(ch, i+1) + 1; //이상한데?? 멍청코드
         		//answer[i] = Arrays.asList(fail).indexOf(fail_D[i], i) + 1; 스트링으로 바꿀가
+        		//.contains(val): 해당 값이 배열에 있는지 검색해서 true / false 반환
         	}
-        	answer[i] = Arrays.asList(fail).indexOf(fail_D[i]) + 1;
+        	else {
+        		answer[i] = Arrays.asList(fail).indexOf(fail_D[i]) + 1;
+        	}
         	//바로 안넣고 한번 검사해서 ?
         }
     
@@ -60,8 +70,11 @@ public class 연습장 {
     }
 
 	public static void main(String[] args) {
-		int [] a = {2, 1, 2, 6, 2, 4, 3, 3};
+		int [] a = {2, 1, 2, 6, 2, 4, 3, 3};  //3, 4, 2, 1, 5
 		solution(5, a);
+		
+		Map<Integer, Double> 점수2 = new HashMap<Integer, Double>();
+		
 	}
 
 }
