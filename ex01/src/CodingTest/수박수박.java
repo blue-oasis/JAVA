@@ -19,7 +19,7 @@ public class 수박수박 {
 	
 
 	public static void main(String[] args) {
-		String answer = solution(5);
+		String answer = solution(7);
 		System.out.println(answer);
 
 	}
