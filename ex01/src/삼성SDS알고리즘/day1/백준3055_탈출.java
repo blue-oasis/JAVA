@@ -26,7 +26,7 @@ public class 백준3055_탈출 {
 	
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		System.setIn(new FileInputStream("src/삼성SDS알고리즘/day1/input3.txt"));
+		System.setIn(new FileInputStream("ex01/src/삼성SDS알고리즘/day1/input3.txt"));
 		Scanner in = new Scanner(System.in);
 		
 		/*int x = 1;
