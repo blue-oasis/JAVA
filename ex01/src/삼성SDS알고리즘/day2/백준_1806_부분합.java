@@ -11,46 +11,48 @@ import java.util.StringTokenizer;
 
 public class 백준_1806_부분합 {
     static int N, M;
-	static int[] nums;
+    static int[] nums;
 
-    public static void main(String[] args) throws Exception  {
-        
+    public static void main(String[] args) throws Exception {
+
         System.setIn(new FileInputStream("ex01/src/삼성SDS알고리즘/day2/input2.txt"));
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st = new StringTokenizer(br.readLine());
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
 
-		N = Integer.parseInt(st.nextToken()); // 수열 갯수
-		M = Integer.parseInt(st.nextToken()); //목표값
+        N = Integer.parseInt(st.nextToken()); // 수열 갯수
+        M = Integer.parseInt(st.nextToken()); // 목표값
 
-		nums = new int[N + 1]; // out index 방지 곱일때는 마지막 원소 1로 만들어야함
+        nums = new int[N + 1]; // out index 방지 곱일때는 마지막 원소 1로 만들어야함
 
-		st = new StringTokenizer(br.readLine());
-		for (int i = 0; i < N; i++) {
-			nums[i] = Integer.parseInt(st.nextToken());
-		}
+        st = new StringTokenizer(br.readLine());
+        for (int i = 0; i < N; i++) {
+            nums[i] = Integer.parseInt(st.nextToken());
+        }
 
         int count = Integer.MAX_VALUE; // 경우의 수 저장
-		int low = 0; // start 인덱스
-		int high = 0; // end 인덱스
-		int sum = nums[0]; // 합계 계산
+        int low = 0; // start 인덱스
+        int high = 0; // end 인덱스
+        int sum = nums[0]; // 합계 계산
 
-        while(true) {
-            if(sum >= M) {
+        while (true) {
+            if (sum >= M) {
                 count = Math.min(high - low + 1, count); // 구간 길이 구하기
-                sum -= nums[low++];
-            }
-            else if (sum < M) {
+                sum -= nums[low++]
+            } else if (sum < M) {
                 sum += nums[++high];
             }
-           
-            if(high == N) {
+
+            if (high == N) {
                 break;
             }
         }
-        
-       
+
+        if(count == Integer.MAX_VALUE) {
+            count = 0;
+        }
+
         System.out.println(count);
-        //수정필요
+       
     }
 }
