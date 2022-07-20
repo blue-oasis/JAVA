@@ -38,7 +38,7 @@ public class 백준_1806_부분합 {
         while (true) {
             if (sum >= M) {
                 count = Math.min(high - low + 1, count); // 구간 길이 구하기
-                sum -= nums[low++]
+                sum -= nums[low++];
             } else if (sum < M) {
                 sum += nums[++high];
             }
