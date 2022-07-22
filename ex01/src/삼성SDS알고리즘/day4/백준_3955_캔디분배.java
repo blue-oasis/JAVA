@@ -57,10 +57,10 @@ public class 백준_3955_캔디분배 {
             
             // 0 < y <= le9
             // 0 < y0 - A * k <= le9
-            // -y0 < -A * k <- le9 - y8
-            // (y0 - le9) / A <= K <y0 / A
+            // -y0 < -A * k <- 1e9 - y8
+            // (y0 - 1e9) / A <= K <y0 / A
 
-            // (y0 - le9) / A <= k < y0 / A
+            // (y0 - 1e9) / A <= k < y0 / A
             //                   k < - x0 / B
 
         
@@ -69,7 +69,7 @@ public class 백준_3955_캔디분배 {
             long kFromY = (long) Math.ceil((double)y0 / (double) A) - 1;
             long kFromX = (long) Math.ceil((double) -x0 / (double)B) - 1;
             long k = Math.min(kFromY, kFromX);
-            long kLimitFromY = (long) Math.ceil((y0 - le9) / (double)A);
+            long kLimitFromY = (long) Math.ceil((y0 - 1e9) / (double)A);
             if(kLimitFromY <= k) {
                 System.out.println(y0 - A * k);
             } else {
