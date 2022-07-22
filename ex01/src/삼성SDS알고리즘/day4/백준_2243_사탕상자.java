@@ -47,7 +47,7 @@ public class 백준_2243_사탕상자 {
         }
        
     }
-}
+
 
 
 // Top-Down-------------------------------------쿼리, update
@@ -84,6 +84,7 @@ static void update(int left, int right, int node, int target, long diff) {
             update(mid + 1, right, node * 2 + 1, target, diff);
         }
     }
+}
 }
 
 

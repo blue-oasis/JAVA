@@ -15,7 +15,7 @@ import java.util.StringTokenizer;
 
 public class 백준_9202_Boggle {
     static int[] mx = {-1, 1, 0, 0, -1, 1, -1, 1};
-    static int[] my = {0, 0, -1, 1, -1, -1, 2, 3, }
+    static int[] my = {0, 0, -1, 1, -1, -1, 2, 3, };
 
     static int W, N, sum, count;
     static String answer;
